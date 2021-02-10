@@ -5,32 +5,32 @@ use std::ffi::{CStr, CString};
 use std::{env, fs, io, process};
 
 /// list_files using libc
-unsafe fn list_files_c(directory: &str) -> io::Result<()> {
+fn list_files_c(directory: &str) -> io::Result<()> {
     let c_dir = CString::new(directory)?;
-    let dp = opendir(c_dir.as_ptr());
+    let dp = unsafe { opendir(c_dir.as_ptr()) };
 
     // Return Err if directory is not found
     if dp.is_null() {
-        return Err(io::Error::new(
-            io::ErrorKind::NotFound,
-            format!("Can't open: {}", directory),
-        ));
+        return Err(io::Error::last_os_error());
     }
 
     loop {
-        let entry = readdir(dp);
+        let entry = unsafe { readdir(dp) };
 
+        // Reached the end of entries
         if entry.is_null() {
             break;
         }
 
-        let d_name = CStr::from_ptr((*entry).d_name.as_ptr());
+        let d_name = unsafe { CStr::from_ptr((*entry).d_name.as_ptr()) };
         if let Ok(d_name) = d_name.to_str() {
             println!("{}", d_name);
         }
     }
 
-    closedir(dp);
+    unsafe {
+        closedir(dp);
+    }
 
     Ok(())
 }
@@ -52,7 +52,7 @@ fn list_files(directory: &str) -> io::Result<()> {
     Ok(())
 }
 
-fn main() {
+fn main() -> io::Result<()> {
     let args = env::args().collect::<Vec<_>>();
 
     if args.len() != 2 {
@@ -60,10 +60,7 @@ fn main() {
         process::exit(-1);
     }
 
-    unsafe {
-        if let Err(e) = list_files_c(&args[1]) {
-            eprintln!("Error: {:?}", e);
-            process::exit(-1);
-        }
-    }
+    list_files_c(&args[1])?;
+
+    Ok(())
 }

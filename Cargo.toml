@@ -12,3 +12,7 @@ libc = "0.2.84"
 [[bin]]
 name = "f03_list_files"
 path = "src/bin/ch01_overview/f03_list_files.rs"
+
+[[bin]]
+name = "f04_copy_stdin_stdout"
+path = "src/bin/ch01_overview/f04_copy_stdin_stdout.rs"
