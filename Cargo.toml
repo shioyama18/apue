@@ -22,3 +22,7 @@ path = "example/ch01_overview/f04_copy_stdin_stdout.rs"
 [[example]]
 name = "f05_getc_putc"
 path = "example/ch01_overview/f05_getc_putc.rs"
+
+[[example]]
+name = "f06_getpid"
+path = "example/ch01_overview/f06_getpid.rs"
