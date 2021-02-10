@@ -1,27 +1,27 @@
 #![allow(dead_code)]
 
+use apue::result::NumericResult;
+use errno::errno;
 use libc::{c_void, read, write, STDIN_FILENO, STDOUT_FILENO};
 use std::io::{self, Read, Write};
 
 const BUFFSIZE: usize = 4096;
 
-unsafe fn copy_stdin_stdout_c() -> io::Result<()> {
+fn copy_stdin_stdout_c() -> io::Result<()> {
     let buffer = [0; BUFFSIZE];
 
-    loop {
-        let n = read(STDIN_FILENO, buffer.as_ptr() as *mut c_void, BUFFSIZE);
-
-        if n == 0 {
-            return Ok(());
+    unsafe {
+        while let Ok(n) = read(STDIN_FILENO, buffer.as_ptr() as *mut c_void, BUFFSIZE).positive() {
+            if n != write(STDOUT_FILENO, buffer.as_ptr() as *const c_void, n as usize) {
+                return Err(io::Error::last_os_error());
+            }
         }
+    }
 
-        if n < 0 {
-            return Err(io::Error::last_os_error());
-        }
-
-        if n != write(STDOUT_FILENO, buffer.as_ptr() as *const c_void, n as usize) {
-            return Err(io::Error::last_os_error());
-        }
+    if errno().0 != 0 {
+        Err(io::Error::last_os_error())
+    } else {
+        Ok(())
     }
 }
 
@@ -40,9 +40,7 @@ fn copy_stdin_stdout() -> io::Result<()> {
 }
 
 fn main() -> io::Result<()> {
-    unsafe {
-        copy_stdin_stdout_c()?;
-    }
+    copy_stdin_stdout_c()?;
 
     Ok(())
 }

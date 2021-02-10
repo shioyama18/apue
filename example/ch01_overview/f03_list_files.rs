@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 
+use apue::result::PointerResult;
 use libc::{closedir, opendir, readdir};
 use std::ffi::{CStr, CString};
 use std::{env, fs, io, process};
@@ -14,14 +15,7 @@ fn list_files_c(directory: &str) -> io::Result<()> {
         return Err(io::Error::last_os_error());
     }
 
-    loop {
-        let entry = unsafe { readdir(dp) };
-
-        // Reached the end of entries
-        if entry.is_null() {
-            break;
-        }
-
+    while let Ok(entry) = unsafe { readdir(dp).not_null() } {
         let d_name = unsafe { CStr::from_ptr((*entry).d_name.as_ptr()) };
         if let Ok(d_name) = d_name.to_str() {
             println!("{}", d_name);
