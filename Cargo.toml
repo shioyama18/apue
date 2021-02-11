@@ -11,18 +11,22 @@ libc = "0.2.84"
 num = "0.3.1"
 errno = "0.2.7"
 
-[[example]]
+[[bin]]
 name = "f03_list_files"
-path = "example/ch01_overview/f03_list_files.rs"
+path = "src/bin/ch01_overview/f03_list_files.rs"
 
-[[example]]
+[[bin]]
 name = "f04_copy_stdin_stdout"
-path = "example/ch01_overview/f04_copy_stdin_stdout.rs"
+path = "src/bin/ch01_overview/f04_copy_stdin_stdout.rs"
 
-[[example]]
+[[bin]]
 name = "f05_getc_putc"
-path = "example/ch01_overview/f05_getc_putc.rs"
+path = "src/bin/ch01_overview/f05_getc_putc.rs"
 
-[[example]]
+[[bin]]
 name = "f06_getpid"
-path = "example/ch01_overview/f06_getpid.rs"
+path = "src/bin/ch01_overview/f06_getpid.rs"
+
+[[bin]]
+name = "f07_fork_exec"
+path = "src/bin/ch01_overview/f07_fork_exec.rs"
