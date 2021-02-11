@@ -18,4 +18,11 @@ extern "C" {
 
     #[cfg(not(target_os = "macos"))]
     pub static mut stdout: *mut FILE;
+
+    #[cfg(target_os = "macos")]
+    #[link_name = "__stderrp"]
+    pub static mut stderr: *mut FILE;
+
+    #[cfg(not(target_os = "macos"))]
+    pub static mut stderr: *mut FILE;
 }

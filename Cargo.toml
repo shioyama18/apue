@@ -30,3 +30,7 @@ path = "src/bin/ch01_overview/f06_getpid.rs"
 [[bin]]
 name = "f07_fork_exec"
 path = "src/bin/ch01_overview/f07_fork_exec.rs"
+
+[[bin]]
+name = "f08_error"
+path = "src/bin/ch01_overview/f08_error.rs"
