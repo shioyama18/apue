@@ -34,3 +34,11 @@ path = "src/bin/ch01_overview/f07_fork_exec.rs"
 [[bin]]
 name = "f08_error"
 path = "src/bin/ch01_overview/f08_error.rs"
+
+[[bin]]
+name = "f09_get_uid_gid"
+path = "src/bin/ch01_overview/f09_get_uid_gid.rs"
+
+[[bin]]
+name = "f10_sigint"
+path = "src/bin/ch01_overview/f10_sigint.rs"
