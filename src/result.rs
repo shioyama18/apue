@@ -25,6 +25,7 @@ where
 }
 
 impl NumericResult for i32 {}
+impl NumericResult for i64 {}
 impl NumericResult for isize {}
 
 pub trait PointerResult<T> {

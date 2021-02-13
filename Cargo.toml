@@ -42,3 +42,7 @@ path = "src/bin/ch01_overview/f09_get_uid_gid.rs"
 [[bin]]
 name = "f10_sigint"
 path = "src/bin/ch01_overview/f10_sigint.rs"
+
+[[bin]]
+name = "f14_limits"
+path = "src/bin/ch02_standardization/f14_limits.rs"
