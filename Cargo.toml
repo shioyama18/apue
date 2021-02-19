@@ -46,3 +46,39 @@ path = "src/bin/ch01_overview/f10_sigint.rs"
 [[bin]]
 name = "f14_limits"
 path = "src/bin/ch02_standardization/f14_limits.rs"
+
+[[bin]]
+name = "f16_allocate_pathname"
+path = "src/bin/ch02_standardization/f16_allocate_pathname.rs"
+
+[[bin]]
+name = "f17_open_max"
+path = "src/bin/ch02_standardization/f17_open_max.rs"
+
+[[bin]]
+name = "f01_lseek"
+path = "src/bin/ch03_file_io/f01_lseek.rs"
+
+[[bin]]
+name = "f02_hole"
+path = "src/bin/ch03_file_io/f02_hole.rs"
+
+[[bin]]
+name = "f05_copy_stdin_stdout"
+path = "src/bin/ch03_file_io/f05_copy_stdin_stdout.rs"
+
+[[bin]]
+name = "f11_print_file_flags"
+path = "src/bin/ch03_file_io/f11_print_file_flags.rs"
+
+[[bin]]
+name = "f12_set_fl"
+path = "src/bin/ch03_file_io/f12_set_fl.rs"
+
+[[bin]]
+name = "e02_dup2"
+path = "src/bin/ch03_file_io/e02_dup2.rs"
+
+[[bin]]
+name = "e06_lseek"
+path = "src/bin/ch03_file_io/e06_lseek.rs"
