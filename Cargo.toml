@@ -10,75 +10,85 @@ edition = "2018"
 libc = "0.2.84"
 num = "0.3.1"
 errno = "0.2.7"
+structopt = "0.3.21"
+anyhow = "1.0.38"
 
-[[bin]]
+[[example]]
 name = "f03_list_files"
-path = "src/bin/ch01_overview/f03_list_files.rs"
+path = "example/ch01_overview/f03_list_files.rs"
 
-[[bin]]
+[[example]]
 name = "f04_copy_stdin_stdout"
-path = "src/bin/ch01_overview/f04_copy_stdin_stdout.rs"
+path = "example/ch01_overview/f04_copy_stdin_stdout.rs"
 
-[[bin]]
+[[example]]
 name = "f05_getc_putc"
-path = "src/bin/ch01_overview/f05_getc_putc.rs"
+path = "example/ch01_overview/f05_getc_putc.rs"
 
-[[bin]]
+[[example]]
 name = "f06_getpid"
-path = "src/bin/ch01_overview/f06_getpid.rs"
+path = "example/ch01_overview/f06_getpid.rs"
 
-[[bin]]
+[[example]]
 name = "f07_fork_exec"
-path = "src/bin/ch01_overview/f07_fork_exec.rs"
+path = "example/ch01_overview/f07_fork_exec.rs"
 
-[[bin]]
+[[example]]
 name = "f08_error"
-path = "src/bin/ch01_overview/f08_error.rs"
+path = "example/ch01_overview/f08_error.rs"
 
-[[bin]]
+[[example]]
 name = "f09_get_uid_gid"
-path = "src/bin/ch01_overview/f09_get_uid_gid.rs"
+path = "example/ch01_overview/f09_get_uid_gid.rs"
 
-[[bin]]
+[[example]]
 name = "f10_sigint"
-path = "src/bin/ch01_overview/f10_sigint.rs"
+path = "example/ch01_overview/f10_sigint.rs"
 
-[[bin]]
+[[example]]
 name = "f14_limits"
-path = "src/bin/ch02_standardization/f14_limits.rs"
+path = "example/ch02_standardization/f14_limits.rs"
 
-[[bin]]
+[[example]]
 name = "f16_allocate_pathname"
-path = "src/bin/ch02_standardization/f16_allocate_pathname.rs"
+path = "example/ch02_standardization/f16_allocate_pathname.rs"
 
-[[bin]]
+[[example]]
 name = "f17_open_max"
-path = "src/bin/ch02_standardization/f17_open_max.rs"
+path = "example/ch02_standardization/f17_open_max.rs"
 
-[[bin]]
+[[example]]
 name = "f01_lseek"
-path = "src/bin/ch03_file_io/f01_lseek.rs"
+path = "example/ch03_file_io/f01_lseek.rs"
 
-[[bin]]
+[[example]]
 name = "f02_hole"
-path = "src/bin/ch03_file_io/f02_hole.rs"
+path = "example/ch03_file_io/f02_hole.rs"
 
-[[bin]]
+[[example]]
 name = "f05_copy_stdin_stdout"
-path = "src/bin/ch03_file_io/f05_copy_stdin_stdout.rs"
+path = "example/ch03_file_io/f05_copy_stdin_stdout.rs"
 
-[[bin]]
+[[example]]
 name = "f11_print_file_flags"
-path = "src/bin/ch03_file_io/f11_print_file_flags.rs"
+path = "example/ch03_file_io/f11_print_file_flags.rs"
 
-[[bin]]
+[[example]]
 name = "f12_set_fl"
-path = "src/bin/ch03_file_io/f12_set_fl.rs"
+path = "example/ch03_file_io/f12_set_fl.rs"
 
-[[bin]]
+[[example]]
 name = "e02_dup2"
-path = "src/bin/ch03_file_io/e02_dup2.rs"
+path = "example/ch03_file_io/e02_dup2.rs"
 
-[[bin]]
+[[example]]
 name = "e06_lseek"
-path = "src/bin/ch03_file_io/e06_lseek.rs"
+path = "example/ch03_file_io/e06_lseek.rs"
+
+[[example]]
+name = "f03_lstat"
+path = "example/ch04_files_and_directories/f03_lstat.rs"
+
+[[example]]
+name = "f08_access"
+path = "example/ch04_files_and_directories/f08_access.rs"
