@@ -15,3 +15,16 @@ macro_rules! c_void {
         $str.as_ptr() as *mut c_void
     };
 }
+
+#[macro_export]
+macro_rules! skip_fail {
+    ($e:expr) => {
+        match $e {
+            Ok(val) => val,
+            Err(e) => {
+                eprintln!("{}", e);
+                continue;
+            }
+        }
+    };
+}

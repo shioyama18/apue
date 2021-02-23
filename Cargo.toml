@@ -92,3 +92,35 @@ path = "example/ch04_files_and_directories/f03_lstat.rs"
 [[example]]
 name = "f08_access"
 path = "example/ch04_files_and_directories/f08_access.rs"
+
+[[example]]
+name = "f09_umask"
+path = "example/ch04_files_and_directories/f09_umask.rs"
+
+[[example]]
+name = "f12_chmod"
+path = "example/ch04_files_and_directories/f12_chmod.rs"
+
+[[example]]
+name = "f16_unlink"
+path = "example/ch04_files_and_directories/f16_unlink.rs"
+
+[[example]]
+name = "f21_futimens"
+path = "example/ch04_files_and_directories/f21_futimens.rs"
+
+[[example]]
+name = "f22_ftw"
+path = "example/ch04_files_and_directories/f22_ftw.rs"
+
+[[example]]
+name = "f23_chdir"
+path = "example/ch04_files_and_directories/f23_chdir.rs"
+
+[[example]]
+name = "f24_getcwd"
+path = "example/ch04_files_and_directories/f24_getcwd.rs"
+
+[[example]]
+name = "f25_dev"
+path = "example/ch04_files_and_directories/f25_dev.rs"

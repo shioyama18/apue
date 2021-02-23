@@ -1,5 +1,3 @@
-use anyhow::Result;
-use apue::result::NumericResult;
 use libc::{access, open, O_RDONLY, R_OK};
 use std::ffi::CString;
 use structopt::StructOpt;
@@ -10,16 +8,20 @@ struct Opt {
     pathname: CString,
 }
 
-fn main() -> Result<()> {
+fn main() {
     let opt = Opt::from_args();
 
     unsafe {
-        access(opt.pathname.as_ptr(), R_OK).non_negative()?;
-        println!("read access OK");
+        if access(opt.pathname.as_ptr(), R_OK) < 0 {
+            eprintln!("access error for {:?}", opt.pathname);
+        } else {
+            println!("read access OK");
+        }
 
-        open(opt.pathname.as_ptr(), O_RDONLY).non_negative()?;
-        println!("open for reading OK");
+        if open(opt.pathname.as_ptr(), O_RDONLY) < 0 {
+            eprintln!("open error for {:?}", opt.pathname);
+        } else {
+            println!("open for reading OK");
+        }
     }
-
-    Ok(())
 }
