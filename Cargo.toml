@@ -124,3 +124,11 @@ path = "example/ch04_files_and_directories/f24_getcwd.rs"
 [[example]]
 name = "f25_dev"
 path = "example/ch04_files_and_directories/f25_dev.rs"
+
+[[example]]
+name = "e06_cp"
+path = "example/ch04_files_and_directories/e06_cp.rs"
+
+[[example]]
+name = "e11_ftw_chdir"
+path = "example/ch04_files_and_directories/e11_ftw_chdir.rs"

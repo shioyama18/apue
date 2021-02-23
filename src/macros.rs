@@ -1,6 +1,3 @@
-#![allow(unused_imports)]
-use libc::{c_char, c_void};
-
 #[macro_export]
 macro_rules! c_str {
     ($str:expr) => {{
@@ -11,9 +8,10 @@ macro_rules! c_str {
 
 #[macro_export]
 macro_rules! c_void {
-    ($str:expr) => {
+    ($str:expr) => {{
+        use libc::c_void;
         $str.as_ptr() as *mut c_void
-    };
+    }};
 }
 
 #[macro_export]
