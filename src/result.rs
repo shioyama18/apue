@@ -22,6 +22,14 @@ where
             Ok(*self)
         }
     }
+
+    fn non_zero(&self) -> Result<Self> {
+        if *self != Self::zero() {
+            Err(Error::last_os_error())
+        } else {
+            Ok(*self)
+        }
+    }
 }
 
 impl NumericResult for i32 {}

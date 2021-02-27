@@ -13,6 +13,9 @@ errno = "0.2.7"
 structopt = "0.3.21"
 anyhow = "1.0.38"
 
+[build-dependencies]
+bindgen = "0.57.0"
+
 [[example]]
 name = "f03_list_files"
 path = "example/ch01_overview/f03_list_files.rs"
@@ -132,3 +135,27 @@ path = "example/ch04_files_and_directories/e06_cp.rs"
 [[example]]
 name = "e11_ftw_chdir"
 path = "example/ch04_files_and_directories/e11_ftw_chdir.rs"
+
+[[example]]
+name = "f04_getc_putc"
+path = "example/ch05_stdio_library/f04_getc_putc.rs"
+
+[[example]]
+name = "f05_fgets_fputs"
+path = "example/ch05_stdio_library/f05_fgets_fputs.rs"
+
+[[example]]
+name = "f11_print_buffering"
+path = "example/ch05_stdio_library/f11_print_buffering.rs"
+
+[[example]]
+name = "f12_tmp"
+path = "example/ch05_stdio_library/f12_tmp.rs"
+
+[[example]]
+name = "f13_make_temp"
+path = "example/ch05_stdio_library/f13_make_temp.rs"
+
+[[example]]
+name = "f15_fmemopen"
+path = "example/ch05_stdio_library/f15_fmemopen.rs"
