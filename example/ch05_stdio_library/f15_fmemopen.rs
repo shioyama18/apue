@@ -24,7 +24,10 @@ fn main() -> Result<()> {
         // Results in empty string since fmemopen places a null byte at beginning of buffer
         println!("initial buffer contents: {}", buf_to_str!(buf));
         fprintf(fp, c_str!("hello, world"));
+
+        #[cfg(not(target_os = "macos"))]
         println!("before fflush: {}", buf_to_str!(buf));
+
         fflush(fp);
         println!("after fflush: {}", buf_to_str!(buf));
         println!("len of string in buf = {}", strlen(buf.as_ptr()));
@@ -41,10 +44,13 @@ fn main() -> Result<()> {
         buf[BSZ - 2] = '\0' as c_char;
         buf[BSZ - 1] = 'X' as c_char;
         fprintf(fp, c_str!("hello, world"));
-
         fclose(fp);
-        println!("after fclose: {}", buf_to_str!(buf));
-        println!("len of string in buf = {}", strlen(buf.as_ptr()));
+        // This code does not print correctly on MacOS since it appends NULL even if the file is closed
+        #[cfg(not(target_os = "macos"))]
+        {
+            println!("after fclose: {}", buf_to_str!(buf));
+            println!("len of string in buf = {}", strlen(buf.as_ptr()));
+        }
     }
     Ok(())
 }

@@ -159,3 +159,7 @@ path = "example/ch05_stdio_library/f13_make_temp.rs"
 [[example]]
 name = "f15_fmemopen"
 path = "example/ch05_stdio_library/f15_fmemopen.rs"
+
+[[example]]
+name = "e01_setbuf"
+path = "example/ch05_stdio_library/e01_setbuf.rs"

@@ -9,7 +9,7 @@ This repository is rust implementation of [Advanced Programming in the UNIX Envi
 - [x] Chapter 2: UNIX Standardization and Implementations
 - [x] Chapter 3: File I/O
 - [x] Chapter 4: Files and Directories
-- [ ] Chapter 5: Standard I/O Library
+- [x] Chapter 5: Standard I/O Library
 - [ ] Chapter 6: System Data Files and Information
 - [ ] Chapter 7: Process Environment
 - [ ] Chapter 8: Process Control
@@ -26,5 +26,3 @@ This repository is rust implementation of [Advanced Programming in the UNIX Envi
 - [ ] Chapter 19: Pseudo Terminals
 - [ ] Chapter 20: A Database Library
 - [ ] Chapter 21: Communicating with a Network Printer
-
-
