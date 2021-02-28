@@ -26,3 +26,11 @@ macro_rules! skip_fail {
         }
     };
 }
+
+#[macro_export]
+macro_rules! c_to_string {
+    ($str:expr) => {{
+        use std::ffi::CStr;
+        CStr::from_ptr($str).to_string_lossy()
+    }};
+}

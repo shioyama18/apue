@@ -1,5 +1,5 @@
-use libc::c_int;
 use libc::FILE;
+use libc::{c_char, c_int, size_t, tm};
 
 extern "C" {
     pub fn getc(stream: *mut FILE) -> c_int;
@@ -25,4 +25,11 @@ extern "C" {
 
     #[cfg(not(target_os = "macos"))]
     pub static mut stderr: *mut FILE;
+
+    pub fn strftime(
+        s: *mut c_char,
+        maxsize: size_t,
+        format: *const c_char,
+        timeptr: *const tm,
+    ) -> size_t;
 }

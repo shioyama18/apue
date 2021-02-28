@@ -163,3 +163,11 @@ path = "example/ch05_stdio_library/f15_fmemopen.rs"
 [[example]]
 name = "e01_setbuf"
 path = "example/ch05_stdio_library/e01_setbuf.rs"
+
+[[example]]
+name = "f02_getpwnam"
+path = "example/ch06_system_files_and_information/f02_getpwnam.rs"
+
+[[example]]
+name = "f11_strftime"
+path = "example/ch06_system_files_and_information/f11_strftime.rs"
