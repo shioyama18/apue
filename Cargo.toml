@@ -171,3 +171,15 @@ path = "example/ch06_system_files_and_information/f02_getpwnam.rs"
 [[example]]
 name = "f11_strftime"
 path = "example/ch06_system_files_and_information/f11_strftime.rs"
+
+[[example]]
+name = "e02_get_passwd"
+path = "example/ch06_system_files_and_information/e02_get_passwd.rs"
+
+[[example]]
+name = "e03_uname"
+path = "example/ch06_system_files_and_information/e03_uname.rs"
+
+[[example]]
+name = "e05_date"
+path = "example/ch06_system_files_and_information/e05_date.rs"
