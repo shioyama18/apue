@@ -183,3 +183,15 @@ path = "example/ch06_system_files_and_information/e03_uname.rs"
 [[example]]
 name = "e05_date"
 path = "example/ch06_system_files_and_information/e05_date.rs"
+
+[[example]]
+name = "f01_hello_world"
+path = "example/ch07_process_environment/f01_hello_world.rs"
+
+[[example]]
+name = "f03_exit_handlers"
+path = "example/ch07_process_environment/f03_exit_handlers.rs"
+
+[[example]]
+name = "f16_print_limits"
+path = "example/ch07_process_environment/f16_print_limits.rs"

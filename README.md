@@ -11,7 +11,7 @@ This repository is rust implementation of [Advanced Programming in the UNIX Envi
 - [x] Chapter 4: Files and Directories
 - [x] Chapter 5: Standard I/O Library
 - [x] Chapter 6: System Data Files and Information
-- [ ] Chapter 7: Process Environment
+- [x] Chapter 7: Process Environment
 - [ ] Chapter 8: Process Control
 - [ ] Chapter 9: Process Relationships
 - [ ] Chapter 10: Signals
