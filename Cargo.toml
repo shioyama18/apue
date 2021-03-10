@@ -16,6 +16,10 @@ anyhow = "1.0.38"
 [build-dependencies]
 bindgen = "0.57.0"
 
+[[bin]]
+name = "echoall"
+path = "src/bin/echoall.rs"
+
 [[example]]
 name = "f03_list_files"
 path = "example/ch01_overview/f03_list_files.rs"
@@ -195,3 +199,51 @@ path = "example/ch07_process_environment/f03_exit_handlers.rs"
 [[example]]
 name = "f16_print_limits"
 path = "example/ch07_process_environment/f16_print_limits.rs"
+
+[[example]]
+name = "f01_fork"
+path = "example/ch08_process_control/f01_fork.rs"
+
+[[example]]
+name = "f03_vfork"
+path = "example/ch08_process_control/f03_vfork.rs"
+
+[[example]]
+name = "f05_f06_pr_exit"
+path = "example/ch08_process_control/f05_f06_pr_exit.rs"
+
+[[example]]
+name = "f08_waitpid"
+path = "example/ch08_process_control/f08_waitpid.rs"
+
+[[example]]
+name = "f12_race_condition"
+path = "example/ch08_process_control/f12_race_condition.rs"
+
+[[example]]
+name = "f16_exec"
+path = "example/ch08_process_control/f16_exec.rs"
+
+[[example]]
+name = "f20_interpreter"
+path = "example/ch08_process_control/f20_interpreter.rs"
+
+[[example]]
+name = "f22_23_system"
+path = "example/ch08_process_control/f22_23_system.rs"
+
+[[example]]
+name = "f28_generate_accounting"
+path = "example/ch08_process_control/f28_generate_accounting.rs"
+
+[[example]]
+name = "f29_print_accounting"
+path = "example/ch08_process_control/f29_print_accounting.rs"
+
+[[example]]
+name = "f30_nice"
+path = "example/ch08_process_control/f30_nice.rs"
+
+[[example]]
+name = "f31_times"
+path = "example/ch08_process_control/f31_times.rs"
