@@ -247,3 +247,7 @@ path = "example/ch08_process_control/f30_nice.rs"
 [[example]]
 name = "f31_times"
 path = "example/ch08_process_control/f31_times.rs"
+
+[[example]]
+name = "f12_orphans"
+path = "example/ch09_process_relationships/f12_orphans.rs"
