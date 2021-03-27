@@ -12,9 +12,9 @@ This repository is rust implementation of [Advanced Programming in the UNIX Envi
 - [x] Chapter 5: Standard I/O Library
 - [x] Chapter 6: System Data Files and Information
 - [x] Chapter 7: Process Environment
-- [ ] Chapter 8: Process Control
-- [ ] Chapter 9: Process Relationships
-- [ ] Chapter 10: Signals
+- [x] Chapter 8: Process Control
+- [x] Chapter 9: Process Relationships
+- [x] Chapter 10: Signals
 - [ ] Chapter 11: Threads
 - [ ] Chapter 12: Thread control
 - [ ] Chapter 13: Daemon Processes

@@ -251,3 +251,59 @@ path = "example/ch08_process_control/f31_times.rs"
 [[example]]
 name = "f12_orphans"
 path = "example/ch09_process_relationships/f12_orphans.rs"
+
+[[example]]
+name = "f02_sigusr"
+path = "example/ch10_signals/f02_sigusr.rs"
+
+[[example]]
+name = "f05_nonreentrant"
+path = "example/ch10_signals/f05_nonreentrant.rs"
+
+[[example]]
+name = "f07_sleep1"
+path = "example/ch10_signals/f07_sleep1.rs"
+
+[[example]]
+name = "f08_sleep2"
+path = "example/ch10_signals/f08_sleep2.rs"
+
+[[example]]
+name = "f10_alarm"
+path = "example/ch10_signals/f10_alarm.rs"
+
+[[example]]
+name = "f11_alarm_longjmp"
+path = "example/ch10_signals/f11_alarm_longjmp.rs"
+
+[[example]]
+name = "f15_sigprocmask"
+path = "example/ch10_signals/f15_sigprocmask.rs"
+
+[[example]]
+name = "f20_signal_masks"
+path = "example/ch10_signals/f20_signal_masks.rs"
+
+[[example]]
+name = "f22_sigsuspend"
+path = "example/ch10_signals/f22_sigsuspend.rs"
+
+[[example]]
+name = "f23_sigsuspend_global"
+path = "example/ch10_signals/f23_sigsuspend_global.rs"
+
+[[example]]
+name = "f26_system"
+path = "example/ch10_signals/f26_system.rs"
+
+[[example]]
+name = "f28_posix_system"
+path = "example/ch10_signals/f28_posix_system.rs"
+
+[[example]]
+name = "f29_sleep"
+path = "example/ch10_signals/f29_sleep.rs"
+
+[[example]]
+name = "f31_sigtstp"
+path = "example/ch10_signals/f31_sigtstp.rs"
