@@ -15,6 +15,7 @@ anyhow = "1.0.38"
 
 [build-dependencies]
 bindgen = "0.57.0"
+cc = "1.0.67"
 
 [[bin]]
 name = "echoall"
@@ -307,3 +308,31 @@ path = "example/ch10_signals/f29_sleep.rs"
 [[example]]
 name = "f31_sigtstp"
 path = "example/ch10_signals/f31_sigtstp.rs"
+
+[[example]]
+name = "f02_print_threads"
+path = "example/ch11_threads/f02_print_threads.rs"
+
+[[example]]
+name = "f03_pthread_join"
+path = "example/ch11_threads/f03_pthread_join.rs"
+
+[[example]]
+name = "f04_incorrect_pthread_exit"
+path = "example/ch11_threads/f04_incorrect_pthread_exit.rs"
+
+[[example]]
+name = "f05_pthread_cleanup"
+path = "example/ch11_threads/f05_pthread_cleanup.rs"
+
+[[example]]
+name = "f13_pthread_mutex_timedlock"
+path = "example/ch11_threads/f13_pthread_mutex_timedlock.rs"
+
+[[example]]
+name = "f16_pthread_barrier"
+path = "example/ch11_threads/f16_pthread_barrier.rs"
+
+[[example]]
+name = "e01_correct_pthread_exit"
+path = "example/ch11_threads/e01_incorrect_pthread_exit.rs"

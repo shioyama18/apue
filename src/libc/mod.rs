@@ -43,7 +43,6 @@ extern "C" {
         format: *const c_char,
         timeptr: *const tm,
     ) -> size_t;
-
 }
 
 pub unsafe fn system(cmdstring: *const c_char) -> c_int {
