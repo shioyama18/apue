@@ -23,7 +23,7 @@ where
         }
     }
 
-    fn non_zero(&self) -> Result<Self> {
+    fn zeroed(&self) -> Result<Self> {
         if *self != Self::zero() {
             Err(Error::last_os_error())
         } else {

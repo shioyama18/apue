@@ -5,9 +5,9 @@ use libc::{atexit, printf};
 
 fn main() -> Result<()> {
     unsafe {
-        atexit(my_exit2).non_zero()?;
-        atexit(my_exit1).non_zero()?;
-        atexit(my_exit1).non_zero()?;
+        atexit(my_exit2).zeroed()?;
+        atexit(my_exit1).zeroed()?;
+        atexit(my_exit1).zeroed()?;
         println!("main is done");
     }
     Ok(())

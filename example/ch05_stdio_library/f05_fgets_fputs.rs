@@ -12,7 +12,7 @@ fn main() -> Result<()> {
             fputs(ptr, stdout).non_negative()?;
         }
 
-        ferror(stdin).non_zero()?;
+        ferror(stdin).zeroed()?;
     }
 
     Ok(())

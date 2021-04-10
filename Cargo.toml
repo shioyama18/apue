@@ -336,3 +336,27 @@ path = "example/ch11_threads/f16_pthread_barrier.rs"
 [[example]]
 name = "e01_correct_pthread_exit"
 path = "example/ch11_threads/e01_incorrect_pthread_exit.rs"
+
+[[example]]
+name = "f08_recursive_mutex"
+path = "example/ch12_thread_control/f08_recursive_mutex.rs"
+
+[[example]]
+name = "f11_nonreentrant_getenv"
+path = "example/ch12_thread_control/f11_nonreentrant_getenv.rs"
+
+[[example]]
+name = "f12_reentrant_getenv"
+path = "example/ch12_thread_control/f12_reentrant_getenv.rs"
+
+[[example]]
+name = "f13_thread_specific_getenv"
+path = "example/ch12_thread_control/f13_thread_specific_getenv.rs"
+
+[[example]]
+name = "f16_thread_signal_handling"
+path = "example/ch12_thread_control/f16_thread_signal_handling.rs"
+
+[[example]]
+name = "f17_pthread_atfork"
+path = "example/ch12_thread_control/f17_pthread_atfork.rs"

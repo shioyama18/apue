@@ -20,6 +20,7 @@ fn main() {
         .header_contents("_stdlib.h", "#include<stdlib.h>\n")
         .header_contents("_setjmp.h", "#include<setjmp.h>\n")
         .header_contents("_signal.h", "#include<signal.h>\n")
+        .header_contents("_pthread.h", "#include<pthread.h>\n")
         .header_contents("_syslimits.h", "#include<sys/syslimits.h>\n")
         .header_contents("_types.h", "#include<sys/types.h>\n")
         .header_contents("_acct.h", "#include<sys/acct.h>\n")
