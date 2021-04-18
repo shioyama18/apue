@@ -360,3 +360,7 @@ path = "example/ch12_thread_control/f16_thread_signal_handling.rs"
 [[example]]
 name = "f17_pthread_atfork"
 path = "example/ch12_thread_control/f17_pthread_atfork.rs"
+
+[[example]]
+name = "f01_initialize_daemon"
+path = "example/ch13_daemon_processes/f01_initialize_daemon.rs"
