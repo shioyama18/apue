@@ -12,6 +12,7 @@ num = "0.3.1"
 errno = "0.2.7"
 structopt = "0.3.21"
 anyhow = "1.0.38"
+once_cell = "1.7.2"
 
 [build-dependencies]
 bindgen = "0.57.0"
@@ -364,3 +365,15 @@ path = "example/ch12_thread_control/f17_pthread_atfork.rs"
 [[example]]
 name = "f01_initialize_daemon"
 path = "example/ch13_daemon_processes/f01_initialize_daemon.rs"
+
+[[example]]
+name = "f04_lock_region"
+path = "example/ch14_advanced_io/f04_lock_region.rs"
+
+[[example]]
+name = "f21_rot_async"
+path = "example/ch14_advanced_io/f21_rot_async.rs"
+
+[[example]]
+name = "f27_mmap"
+path = "example/ch14_advanced_io/f27_mmap.rs"

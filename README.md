@@ -17,8 +17,8 @@ This repository is rust implementation of [Advanced Programming in the UNIX Envi
 - [x] Chapter 10: Signals
 - [x] Chapter 11: Threads
 - [x] Chapter 12: Thread control
-- [ ] Chapter 13: Daemon Processes
-- [ ] Chapter 14: Advanced I/O
+- [x] Chapter 13: Daemon Processes
+- [x] Chapter 14: Advanced I/O
 - [ ] Chapter 15: Interprocess Communication
 - [ ] Chapter 16: Network IPC: Sockets
 - [ ] Chapter 17: Advanced IPC
