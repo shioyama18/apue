@@ -38,6 +38,14 @@ where
             Ok(*self)
         }
     }
+
+    fn not_equals(&self, other: Self) -> Result<Self> {
+        if *self == other {
+            Err(Error::last_os_error())
+        } else {
+            Ok(*self)
+        }
+    }
 }
 
 impl NumericResult for i32 {}

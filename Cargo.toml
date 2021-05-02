@@ -377,3 +377,15 @@ path = "example/ch14_advanced_io/f21_rot_async.rs"
 [[example]]
 name = "f27_mmap"
 path = "example/ch14_advanced_io/f27_mmap.rs"
+
+[[example]]
+name = "f05_pipe"
+path = "example/ch15_ipc/f05_pipe.rs"
+
+[[example]]
+name = "f06_pager"
+path = "example/ch15_ipc/f06_pager.rs"
+
+[[example]]
+name = "f11_pager_popen"
+path = "example/ch15_ipc/f11_pager_popen.rs"
